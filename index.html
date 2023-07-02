@@ -13,22 +13,18 @@
   </style>
 </head>
 <body>
-  <div class="container custom-container">
-    <h1 class="text-center">Todo List</h1>
-    <div class="row">
-        <div class="col-md-6 font-weight-bold">Add Todo</div>
-      <div class="col-md-6 mb-4 mt-1">
-        <input type="text" id="taskInput" class="form-control" placeholder="Enter task">
+    <div class="container custom-container">
+        <h1 class="text-center mb-3">Todo List</h1>
+          <div class="col">
+            <div class="font-weight-bold mb-3 ml-1">Add Todo</div>
+              <input type="text" id="taskInput" class="form-control mb-2" placeholder="Enter task">
+              <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+        </div>
+        <ul id="taskList" class="list-group mt-3">
+          <!-- Todo tasks will be added dynamically here -->
+        </ul>
       </div>
-      <div class="col-md-6">
-        <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
-      </div>
-    </div>
-    <ul id="taskList" class="list-group mt-3">
-      <!-- Todo tasks will be added dynamically here -->
-    </ul>
-  </div>
-
+      
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Bootstrap JS -->
