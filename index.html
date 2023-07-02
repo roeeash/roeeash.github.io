@@ -5,62 +5,23 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- Custom CSS -->
-  <style>
-    .custom-container {
-      background-color: beige;
-      margin-bottom: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container custom-container">
-        <h1 class="text-center mb-3">Todo List</h1>
-          <div class="col">
-            <div class="font-weight-bold mb-3 ml-1">Add Todo</div>
-              <input type="text" id="taskInput" class="form-control mb-2" placeholder="Enter task">
-              <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
-        </div>
-        <ul id="taskList" class="list-group mt-3">
-          <!-- Todo tasks will be added dynamically here -->
-        </ul>
-      </div>
-      
+  <div class="container custom-container">
+    <h1 class="text-center mb-3">Todo List</h1>
+    <div class="col">
+      <div class="font-weight-bold mb-3 ml-1">Add Todo</div>
+      <input type="text" id="taskInput" class="form-control mb-2" placeholder="Enter task">
+      <button id="addTaskBtn" class="btn btn-primary d-inline-block">Add Task</button>
+    </div>
+    <ul id="taskList" class="list-group mt-3">
+      <!-- Todo tasks will be added dynamically here -->
+    </ul>
+  </div>  
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom JS -->
-  <script>
-   $(document).ready(function() {
-    // Handler for adding a new task
-    $("#addTaskBtn").click(function() {
-      var taskInput = $("#taskInput").val().trim();
-      if (taskInput !== "") {
-        var listItem = $("<li>").addClass("list-group-item").text(taskInput);
-        var deleteButton = $("<button>").addClass("btn btn-danger float-right delete-task").html("&times;");
-        var approveButton = $("<button>").addClass("btn btn-success float-right mr-2 approve-task").html("&#10004;");
-  
-        listItem.append(deleteButton);
-        listItem.append(approveButton);
-        $("#taskList").append(listItem);
-        $("#taskInput").val(""); // Clear the input field
-      }
-    });
-  
-    // Handler for deleting a task
-    $(document).on("click", ".delete-task", function() {
-      $(this).parent().remove();
-    });
-  
-    // Handler for approving a task
-    $(document).on("click", ".approve-task", function() {
-      var listItem = $(this).parent();
-      listItem.addClass("approved-task");
-      setTimeout(function() {
-        listItem.remove();
-      }, 1000);
-    });
-  });
-  </script>
+  <script src="handlers.js"></script>
 </body>
 </html>

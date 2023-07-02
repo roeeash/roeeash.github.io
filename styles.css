@@ -1,0 +1,27 @@
+.custom-container {
+    background-color: beige;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-container h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .font-weight-bold {
+    margin-bottom: 1rem;
+    margin-left: 0.25rem;
+  }
+  
+  .form-control {
+    margin-bottom: 0.5rem;
+  }
+  
+  .list-group {
+    margin-top: 1rem;
+  }
+  
