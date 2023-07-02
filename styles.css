@@ -39,4 +39,21 @@
   .list-group {
     margin-top: 1rem;
   }
+
+
+  .textbox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  .textbox:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+  }
+
+  .textbox:active {
+    background-color: #e0e0e0;
+    border-color: #666;
+  }
   
