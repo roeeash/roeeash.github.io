@@ -13,6 +13,33 @@
   transition: all 0.3s ease;
 }
 
+.btn-approve, .btn-cancel {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn-approve {
+  background-color: white;
+  border: 2px solid green;
+  color: green;
+}
+
+.btn-cancel {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.btn-approve:hover, .btn-cancel:hover {
+  background-color: lightgray;
+}
+
+
 .custom-container {
     background-color: beige;
     margin-bottom: 1rem;
