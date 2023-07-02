@@ -21,8 +21,7 @@ $(document).on("click", ".delete-task", function() {
 // Handler for approving a task
 $(document).on("click", ".approve-task", function() {
   var listItem = $(this).parent();
-  
-  if (listItem.css('textDecoration') === 'line-through') {
+  if (listItem.css('textDecoration').includes("line-through")) {
     listItem.css('textDecoration', 'none');
   } else {
     listItem.css('textDecoration', 'line-through');
