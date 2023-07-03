@@ -33,6 +33,10 @@
   background-color: white;
   border: 2px solid red;
   color: red;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-approve:hover, .btn-cancel:hover {
@@ -41,47 +45,53 @@
 
 
 .custom-container {
-    background-color: beige;
+  background-color: beige;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+  
+.custom-container h1 {
     margin-bottom: 1rem;
-  }
+}
   
-  .custom-container h1 {
-    margin-bottom: 1rem;
-  }
+.col {
+  display: flex;
+  flex-direction: column;
+}
   
-  .col {
-    display: flex;
-    flex-direction: column;
-  }
+.font-weight-bold {
+  margin-bottom: 1rem;
+  margin-left: 0.25rem;
+}
   
-  .font-weight-bold {
-    margin-bottom: 1rem;
-    margin-left: 0.25rem;
-  }
+.form-control {
+  margin-bottom: 0.5rem;
+}
   
-  .form-control {
-    margin-bottom: 0.5rem;
-  }
-  
-  .list-group {
-    margin-top: 1rem;
-  }
+.list-group {
+  margin-top: 1rem;
+}
+
+.list-group-item {
+  margin-bottom: 0.5rem;
+}  
 
 
-  .textbox {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 5px;
-  }
+.textbox {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
 
-  .textbox:hover {
-    background-color: #f0f0f0;
-    border-color: #999;
-  }
+.textbox:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
 
-  .textbox:active {
-    background-color: #e0e0e0;
-    border-color: #666;
-  }
+.textbox:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
   
   
