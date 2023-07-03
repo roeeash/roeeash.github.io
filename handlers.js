@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#addTaskBtn").click(function() {
     var taskInput = $("#taskInput").val().trim();
     if (taskInput !== "") {
-      addTaskToList(taskInput, null);
+      addTaskToList(taskInput, undefined);
       saveTasksToLocalStorage();
       $("#taskInput").val(""); // Clear the input field
     }
@@ -64,7 +64,7 @@ $(document).ready(function() {
       if ($(this).css('textDecoration').includes("line-through")) {
         crossedOutTasks.push(text.slice(0, text.length - 2));
       } else {
-        crossedOutTasks.push(null);
+        crossedOutTasks.push(undefined);
       }
     });
     
